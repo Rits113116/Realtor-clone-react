@@ -52,7 +52,7 @@ export default function Header() {
               <li
                 className={`cursor-pointer py-3 text-sm font-semibold ${pathMatchRoute("/sign-in")|| pathMatchRoute("/profile") ? "text-black border-b-2  border-b-red-500" : "text-gray-400 border-b-transparent"
             }`}
-                onClick={() => navigate("/sign-in")}
+                onClick={() => navigate("/profile")}
               >
                 {pageState}
               </li>
