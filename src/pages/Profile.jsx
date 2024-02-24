@@ -8,7 +8,7 @@ import { FcHome } from "react-icons/fc";
 export default function Profile() {
   const auth=getAuth()
   const navigate=useNavigate()
-  const [changeDetail,setChangeDetail]=useState(true)
+  const [changeDetail,setChangeDetail]=useState(false)
   const [formData,setFormData]=useState({
     name:auth.currentUser.displayName,
     email:auth.currentUser.email
